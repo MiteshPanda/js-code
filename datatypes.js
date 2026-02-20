@@ -36,3 +36,4 @@ console.log("The value of bigInt is ", bigInt);
 
 console.log(typeof null); // returns object
 console.log(typeof undefined) // returns undefined
+
