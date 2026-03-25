@@ -1,5 +1,4 @@
 let score = false
-
 //console.log(typeof score)
 //console.log(typeof (score))
 
@@ -30,8 +29,8 @@ let convertIntoString = String(ascii)
 //console.log(typeof convertIntoString)
 //console.log(convertIntoString)
 
-
 let value = 97
 let convertIntoAscii = String.fromCharCode(value)
 //console.log(typeof convertIntoAscii)
 //console.log(convertIntoAscii)
+//print the character corresponding to the ASCII value 97, which is 'a'
