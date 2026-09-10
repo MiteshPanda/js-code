@@ -14,7 +14,7 @@ const gameName = new String('Ghost of Tsushima')
 // console.log(gameName.includes("T"))
 // console.log(gameName.charAt(15))
 // console.log(gameName.indexOf('a'))
-// console.log(gameName.split('  '));
+// console.log(gameName.split(' '));
 
 
 const newName = gameName.substring(0, 8)
