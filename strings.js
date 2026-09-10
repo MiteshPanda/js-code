@@ -14,6 +14,7 @@ const gameName = new String('Ghost of Tsushima')
 // console.log(gameName.includes("T"))
 // console.log(gameName.charAt(15))
 // console.log(gameName.indexOf('a'))
+// console.log(gameName.split('  '));
 
 
 const newName = gameName.substring(0, 8)
@@ -30,4 +31,3 @@ const url = "https://mitesh-panda.framer.website/"
 console.log(url.replace('-', ''))
 console.log(url.includes('mitesh'));
 console.log(url.includes('modric'));
-console.log(gameName.split('  '));
