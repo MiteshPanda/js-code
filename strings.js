@@ -21,3 +21,13 @@ console.log(newName)
 
 const anotherName = gameName.slice(-8, 10)
 console.log(anotherName)
+
+const newString = '           Cristiano                       '
+console.log(newString);
+console.log(newString.trim());
+
+const url = "https://mitesh-panda.framer.website/"
+console.log(url.replace('-', ''))
+console.log(url.includes('mitesh'));
+console.log(url.includes('modric'));
+console.log(gameName.split('  '));
