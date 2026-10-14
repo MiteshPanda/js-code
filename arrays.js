@@ -32,10 +32,10 @@ console.log(myArr.indexOf(4));
 console.log(myArr.includes(10)); // provide elements here, not the index inside ().
 console.log(myArr.indexOf(40)); // provide elements here, not the index inside ().
 
-// const newArr = myArr.join() // join() converts the array into string (CSV).
-// console.log(myArr);
-// console.log(newArr);
-// console.log(typeof(newArr));
+const newArr = myArr.join() // join() converts the array into string (CSV).
+console.log(myArr);
+console.log(newArr);
+console.log(typeof(newArr));
 
 // Slice vs Splice
 
