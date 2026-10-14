@@ -1,7 +1,7 @@
 /*
 Object literals  = No Singleton objects possible.
 Object constructors = Singleton objects possible. eg: Object.create
-
+*/
 eg: 
 const bumbleUser = {} // Non-Singleton Object
 const bumbleUser = new Object() // Singleton Object
@@ -59,7 +59,7 @@ bumbleUser.email = "kakathesonofjesus@brazil.br"
 bumbleUser.isLoggedIn = true,
 bumbleUser.lastLoginDays = ["Wednesday", "Sunday"]
 console.log(bumbleUser);
-*/
+
 const hingeUser = {
     email: "toddsmacks@hinge.com",
     fname : {
