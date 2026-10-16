@@ -77,5 +77,13 @@ console.log(hingeUser.fname?.userFullName.FirtsName) // result: Todd   ? -> Chec
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "c", 4: "d"}
 
-const obj3 = Object.assign({}, obj1, obj2)
-console.log(obj3)
+// const obj3 = Object.assign({}, obj1, obj2) // {} -> used to store everything (target), else the updation happens in a copy of obj1 (source).
+const obj3 = {...obj1, ...obj2}
+console.log(obj3) // {} -> Target, obj1, obj2 -> source.
+
+console.log(Object.keys(bumbleUser));
+console.log(Object.values(bumbleUser));
+console.log(Object.entries(bumbleUser));
+
+console.log(bumbleUser.hasOwnProperty("location")) 
+console.log(bumbleUser.hasOwnProperty("date"))
