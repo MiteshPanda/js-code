@@ -87,3 +87,19 @@ console.log(Object.entries(bumbleUser));
 
 console.log(bumbleUser.hasOwnProperty("location")) 
 console.log(bumbleUser.hasOwnProperty("date"))
+
+// De-structuring an Object.
+
+const football = {
+    name: "Pele",
+    position: "ST, CAM",
+    nationality: "Brazil",
+    achievements: "3x World Cup Champion"
+}
+
+// football.postion 
+// const {position} = football // De-structuring an object.
+// console.log(position)
+
+const {position: pos} = football // can rename as per own self's conviction
+console.log(pos)
