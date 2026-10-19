@@ -1,4 +1,3 @@
-/*
 function basketball() {
     console.log("Kobe Bryant")
     console.log("Micheal Jordan")
@@ -47,4 +46,38 @@ console.log(userLoggedIn()) // returns undefined.
 const userL = userLoggedIn("Desire Doue")
 console.log(userL)
 
-*/
+
+function calcCartPrice(...number1) {         // ... -> Rest operator, takes multiple input.
+    return number1
+}
+
+console.log(calcCartPrice(100, 200, 3300))
+
+function calculateCartPrice(val1, val2, ...number1) {         // ... -> Rest operator, takes multiple input.
+    return number1
+}
+
+console.log(calculateCartPrice(100, 200, 3300, 500, 874, 369))  // assigns val1 = 100., val2 = 200 and ...number1 -> bundles up the rest.
+
+const game = {
+    player: "Nani",
+    position: "Winger"
+}
+
+function handleObject(anyObject) {
+    return (`The player is ${anyObject.player} and plays as a ${anyObject.position}.`)
+}
+
+console.log(handleObject(game))
+console.log(handleObject({   
+    player: "Gareth Bale",  // manuak inputs.
+    position: "Winger" 
+}))
+
+const newArray = [07, 10, 17, 19, 23, 22, 06]
+
+function getValueFromIndex(getArray) {
+    return getArray[3]
+}
+console.log(getValueFromIndex(newArray)) 
+console.log(getValueFromIndex([89, 34, 12, 90, 74]))   // manuak inputs.
