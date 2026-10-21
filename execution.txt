@@ -1,0 +1,37 @@
+JavaScript Execution Context.
+
+1. Global Execution Context.
+2. Functional/Function Execution Context.
+3. Eval Execution Context.
+
+{} => Global Execution Context (this -> window function in browser).
+
+
+Memory Creation Phase / Memory Phase / Creation Phase: allocates SPACE only for variables, other declarations.
+
+Execution Phase: performs operations provided, add, sub, multiply, etc. executes the declared members.
+
+
+eg: 
+let val1 = 10
+let val2 = 20
+
+function addNos(num1, num2) {
+    let totalSum = num1 + num2
+    return total
+}
+
+let result1 = addNos(val1, val2)
+let result2 = addNos(19, 23)
+
+
+Execution Steps:
+1. Global Execution Context -> this.
+2. Memory Phase: val1 -> undefined, val2 -> undefined, addNos -> function defination, result1 -> undefined, result2 -> undefined (Cycle One)
+3. Execution Phase: val1 -> 10, val2 -> 20, addNos -> creates NEW variable environment + execution thread (New Executional Context, get's deleted later after operations are performed.)
+3.1. Memory Phase: val1 -> undefined, val2 -> undefined, total -> undefined
+3.2. Execution Context: num1 -> 10, num2 -> 20, (total -> 30; return to 1. Global Execution Context)
+3. result1 -> 30 addNos, -> creates NEW variable environment + execution thread (New Executional Context, get's deleted later after operations are performed.)
+3.1.1. Memory Phase: val1 -> undefined, val2 -> undefined, total -> undefined
+3.1.2. Execution Context: num1 -> 19, num2 -> 23, (total -> 42; return to 1. Global Execution Context)
+3. result2 -> 42
